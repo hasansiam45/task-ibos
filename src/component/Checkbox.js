@@ -9,7 +9,7 @@ const Checkbox = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
 
      useEffect(() => {
-         fetch(`https://sheltered-dusk-62408.herokuapp.com/users`)
+         fetch(`http://localhost:5000/users`)
              .then(res => res.json())
              .then(data => setUserDetails(data))
         }, [])
@@ -58,6 +58,7 @@ const Checkbox = () => {
                 
                 console.log('deleted', result)
             })
+        
         window.location.reload(false)
 
     }

@@ -115,7 +115,7 @@ const Checkbox2 = () => {
     }
 
     
-    const handleDelete = (id) => {
+    const handleDeleteCheck = (id) => {
     
         console.log(id)
         const selectedData = datas.find(d => d.id === id)
@@ -167,7 +167,7 @@ const Checkbox2 = () => {
                                  <td> <input type="checkbox" onClick={()=>handleCreate(data.id)} name="" id="" /> </td>
                                  <td> <input type="checkbox" onClick={()=>handleView(data.id)} name="view" id="" /> </td>
                                  <td> <input type="checkbox" onClick={()=>handleEdit(data.id)} name="edit" id="" /> </td>
-                                 <td> <input type="checkbox" onClick={()=>handleDelete(data.id)} name="delete" id="" /> </td>
+                                 <td> <input type="checkbox" onClick={()=>handleDeleteCheck(data.id)} name="delete" id="" /> </td>
                                  <td> <input type="checkbox" onClick={()=>handleApprove(data.id)} name="approve" id="" /> </td>
                         
                         </tr>
