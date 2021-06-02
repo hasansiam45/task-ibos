@@ -9,7 +9,7 @@ const Checkbox = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
 
      useEffect(() => {
-         fetch(`http://localhost:5000/users`)
+         fetch(`https://sheltered-dusk-62408.herokuapp.com/users`)
              .then(res => res.json())
              .then(data => setUserDetails(data))
         }, [])
